@@ -324,8 +324,7 @@ if (isset($_POST['addfood'])) {
 
                                 if ($run_delete == TRUE) {
 
-                                    echo "<script>alert('Food has been deleted')</script>";
-
+                                    echo "<script>confirm('Do you want to delete food?')</script>";
                                     echo "<script>window.open('food.php','_self')</script>";
                                 }
                             }

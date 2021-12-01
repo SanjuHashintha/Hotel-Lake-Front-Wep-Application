@@ -578,6 +578,7 @@ if (isset($_POST['addgeust'])) {
                                 $rowcount = $row_bol['count(guestid)'];
                                 if ($rowcount == 0) {
                                     $payment = 'Payment';
+                                    $tobepaid = '';
                                 } else {
                                     $payment = 'Payment';
                                     $boll = "select tobepaid from payment where guestid = '$guestid' AND paydatetime = (SELECT MAX(paydatetime) FROM payment WHERE guestid = '$guestid')";
@@ -603,6 +604,7 @@ if (isset($_POST['addgeust'])) {
                                 <td><?php echo $arrivaldate; ?></td>
                                 <td><?php echo $departuredate; ?></td>
                                 <td><a href="payment.php?payid=<?php echo $guestid; ?>"> <button type="submit" name="payment" id="myBtn" class="btn btn-success" <?php if ($tobepaid == 0) { ?> disabled <?php   } ?>><?php echo $payment; ?></button></a></td>
+
 
 
 
