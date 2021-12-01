@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hotel</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+      <div class="line line-4"></div>
+      <div class="line line-5"></div>
+    </div>
+    <header>
+      <a href="#home" class="brand"
+        ><div class="text1">Hotel</div>
+        <div class="text2">Lake Front</div></a
+      >
+      <div class="menu"></div>
+      <div class="navigation" id="navigation">
+        <div class="navigation-item">
+          <a href="#booking">Booking</a>
+          <a href="#services">Services</a>
+          <a href="#offers">Offers</a>
+          <a href="#dining">Dining</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="../admin/login.php">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <video
+        class="video-slide active"
+        src="video/video1.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="video/Food.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="video/Dessert.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="video/video3.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="video/Services.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <div class="overlay"></div>
+      <div class="content active">
+        <h1>Hotel Lake Front</h1>
+        <p>
+          Treat your life by adding colors to it. Birds chirping under the
+          glamorous sky. Visit hotel lake front and make your next big.
+        </p>
+        <button class="btn">More Details</button>
+      </div>
+
+      <div class="content">
+        <h1>Food</h1>
+
+        <button class="btn">More Details</button>
+      </div>
+
+      <div class="content">
+        <h1>Dessert</h1>
+
+        <button class="btn">More Details</button>
+      </div>
+
+      <div class="content">
+        <h1>Facilities</h1>
+
+        <button class="btn">More Details</button>
+      </div>
+
+      <div class="content">
+        <h1>Services</h1>
+
+        <button class="btn">More Details</button>
+      </div>
+
+      <div class="slider-navigation">
+        <div class="swap-btn active"></div>
+        <div class="swap-btn"></div>
+        <div class="swap-btn"></div>
+        <div class="swap-btn"></div>
+        <div class="swap-btn"></div>
+      </div>
+
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
+
+    <div class="booking" id="booking">
+      <div class="card">
+        <img src="images/booking.jpg" alt="booking" data-aos="fade-right" />
+
+        <div class="details" data-aos="fade-left">
+          <h1>Booking</h1>
+          <p>
+            Online and physical booking are available. Anytime cancellation is a
+            fine option you will have.
+          </p>
+
+          <a href="booking.html" style="text-decoration: none"
+            ><div class="btn"><button>Book Now</button></div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="services" id="services">
+      <div class="card">
+        <img src="images/services.jpg" alt="services" data-aos="fade-right" />
+
+        <div class="details" data-aos="fade-left">
+          <h1>Services</h1>
+          <p>
+            Our courteous staff will always there for your needs. Cleaning and
+            all the other room services are nicely done.
+          </p>
+
+          <div class="btn"><button>More Details</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offers" id="offers">
+      <div class="card">
+        <img src="images/offers.jpg" alt="offers" data-aos="fade-right" />
+
+        <div class="details" data-aos="fade-left">
+          <h1>Offers</h1>
+          <p>
+            Unexpected stunning packages and night events will make your holiday
+            remarkable.
+          </p>
+
+          <div class="btn"><button>More Details</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dining" id="dining">
+      <div class="card">
+        <img src="images/dining.jpg" alt="dining" data-aos="fade-right" />
+
+        <div class="details" data-aos="fade-left">
+          <h1>Dining</h1>
+          <p>
+            Enjoy the taste of the quality foods. We provide both local and
+            international choices as per your need.
+          </p>
+
+          <div class="btn"><button>More Details</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact" id="contact">
+      <div class="card">
+        <img src="images/contact.jpg" alt="contact" data-aos="fade-right" />
+
+        <div class="details" data-aos="fade-left">
+          <h1>Contact</h1>
+          <p>
+            Feel free to contact us through any of the following contacts. Your
+            mender is on the other side.
+          </p>
+
+          <div class="btn"><button>More Details</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer of the page -->
+
+    <footer class="footer-distributed" id="about">
+      <div class="footer-left">
+        <h3>Hotel<span>Lake Front</span></h3>
+
+        <p class="footer-links">
+          <a href="#home" class="link-1">Home</a>
+
+          <a href="#services">Services</a>
+
+          <a href="#offers">Offers</a>
+
+          <a href="#dining">Dining</a>
+
+          <a href="#contact">Contact</a>
+
+          <a href="#">Faq</a>
+        </p>
+
+        <p class="footer-company-name">Hotel Lakefront © 2021</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>No: 22/7, Kandy Road,</span> Matale, Sri Lanka</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+94 812244489</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:info@lakefront.com">info@lakefront.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the hotel</span>
+          Treat your life by adding colors to it. Birds chirping under the
+          glamorous sky. Visit hotel lake front and make your next big.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 2000,
+      });
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
