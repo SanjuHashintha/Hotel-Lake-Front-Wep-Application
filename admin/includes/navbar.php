@@ -6,7 +6,16 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-user-lock"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Admin</div>
+        <?php
+        if ($_SESSION['role'] == 7) {
+            $role = 'Admin';
+        }
+        if ($_SESSION['role'] == 10) {
+            $role = 'Receptionist';
+        }
+
+        ?>
+        <div class="sidebar-brand-text mx-3"><?php echo $role ?></div>
     </a>
 
     <!-- Divider -->

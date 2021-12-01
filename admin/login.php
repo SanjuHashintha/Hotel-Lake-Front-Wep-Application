@@ -33,7 +33,8 @@ include("includes/db.php");
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block " style="background-image: url('bg.jpg');"></div>
+                            <div class="col-lg-6 d-none d-lg-block " style="background-image: url('bell.jpg');background-repeat: no-repeat;
+  background-size: 800px;"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
