@@ -38,8 +38,9 @@ if (isset($_GET['change'])) {
     <div class="container px-5 my-5">
         <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="post">
             <div class="mb-3">
-                <label class="form-label" for="firstName">First Name</label>
-                <input class="form-control" id="firstName" type="text" placeholder="First Name" value="<?php echo $firstname ?>" />
+                <label class="form-label" for="firstName">First Name</label> <br>
+                <label class="form-label" for="firstName" id="firstName"><?php echo $firstname ?></label>
+
             </div>
             <div class="mb-3">
                 <label class="form-label" for="newPassword">New Password</label>

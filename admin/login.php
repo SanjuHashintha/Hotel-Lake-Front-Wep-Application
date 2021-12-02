@@ -79,6 +79,8 @@ include("includes/db.php");
 
 if (isset($_POST['login'])) {
 
+    //authentication 
+
     $email = mysqli_real_escape_string($conn, $_POST['email']);
 
     $password = mysqli_real_escape_string($conn, $_POST['password']);
@@ -93,6 +95,8 @@ if (isset($_POST['login'])) {
 
     if (mysqli_num_rows($run_admin) == 1) {
         $_SESSION['role'] = $user['position'];
+
+        //authorization 
         if ($run_admin && $_SESSION['role'] == 7) {
 
             $_SESSION['user_id'] = $user['staffid'];

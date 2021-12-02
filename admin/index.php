@@ -139,6 +139,7 @@ if (!isset($_SESSION['user_id'])) {
     </div>
     <!-- /.container-fluid -->
     <div class="card shadow mb-4">
+
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Monthly Revenue</h6>
         </div>
@@ -150,12 +151,66 @@ if (!isset($_SESSION['user_id'])) {
 
         </div>
 
+        <!-- <canvas id="myChart" style="height:500px;max-width:1700px"></canvas> -->
         <!-- Content Row -->
 
     </div>
     <!-- End of Main Content -->
+    <!-- <?php
+            $day = array(10);
+
+            for ($i = 1; $i <= 10; $i++) {
+
+                $date = date('d ');
+                $month = date('m ');
+                $dt = strtotime($date);
+                $revd = date("d ", strtotime("-$i day", $dt));
+                $sum = "SELECT sum(amount) FROM payment WHERE MONTH(paydatetime) = '$month' AND DAY(paydatetime) = '$revd'";
+                $run_sum = mysqli_query($conn, $sum);
+                $tsum = mysqli_fetch_assoc($run_sum);
+                $day[$i - 1] = $tsum;
+                echo $revd;
+            }
+
+
+            ?> -->
 
     <!-- Bootstrap core JavaScript-->
+
+    <!-- <script>
+        var xValues = ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8', 'Day 9', 'Day 10'];
+        var yValues = [<?php echo $day[0] ?>, <?php echo $day[1] ?>, <?php echo $day[2] ?>, <?php echo $day[3] ?>, <?php echo $day[4] ?>, <?php echo $day[5] ?>, <?php echo $day[6] ?>, <?php echo $day[7] ?>, <?php echo $day[8] ?>, <?php echo $day[9] ?>];
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    fill: false,
+                    lineTension: 0,
+                    backgroundColor: "rgba(0,0,255,1.0)",
+                    borderColor: "rgba(0,0,255,0.5)",
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            min: 6,
+                            max: 16
+                        }
+                    }],
+                }
+            }
+        });
+    </script> -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
